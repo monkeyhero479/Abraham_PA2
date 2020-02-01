@@ -1,0 +1,19 @@
+package mypackage;
+import java.util.Scanner;
+import java.lang.*;
+
+
+public class Encrypter {
+	public static void main(String[] args){
+		double number,num1,num2,num3,num4;
+System.out.println("Hello!\nWelcome to Noodletech Encryption Software\nPlease enter your four digit number.");
+Scanner input = new Scanner(System.in);
+number=input.nextDouble();
+num1=Math.floor((number%10000)/1000);
+num2=Math.floor((number%1000)/100);
+num3=Math.floor((number%100)/10);
+num4=Math.floor((number%10));
+
+	System.out.println(num1+num2+num3+num4);
+	}
+}

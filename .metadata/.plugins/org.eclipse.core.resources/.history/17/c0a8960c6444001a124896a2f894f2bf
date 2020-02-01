@@ -1,0 +1,13 @@
+package mypackage;
+
+public class Abraham_PA2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int num;
+System.out.println("Hello,\n Thank you for choosing Noodletech encryption software. Please enter your four digit number:");
+num=input.nextInt();
+System.out.println("Use Input: %d",num)
+	}
+
+}

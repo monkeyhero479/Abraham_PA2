@@ -1,0 +1,25 @@
+package mypackage;
+import java.util.Scanner;
+import java.lang.*;
+import java.util.Formatter;
+
+public class Encrypter {
+	public static void main(String[] args){
+		double number,num1,num2,num3,num4,total;
+System.out.println("Please enter the four digit number you would like to encrypt.");
+Scanner input = new Scanner(System.in);
+number=input.nextDouble();
+
+num1=((Math.floor((number%10000)/1000)+7)%10)*10;
+num2=(Math.floor((number%1000)/100)+7)%10;
+num3=((Math.floor((number%100)/10)+7)%10)*1000;
+num4=((Math.floor((number%10))+7)%10)*100;
+total=num1+num2+num3+num4;
+
+System.out.println("Here is your encrypted number: "+String.format("%04.0f",total));
+
+Decrypter decryptnum = new Decrypter();
+decryptnum.ogvalue();
+
+	}
+}

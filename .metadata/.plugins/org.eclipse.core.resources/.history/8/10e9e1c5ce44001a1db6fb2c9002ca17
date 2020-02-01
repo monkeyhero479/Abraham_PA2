@@ -1,0 +1,17 @@
+package mypackage;
+import java.util.Scanner;
+
+public class Decrypter {
+	public void decrypt() {
+		double dvalue,num5,num6,num7,num8,total1;
+System.out.println("Please enter the four digit number you would like to decrypt.\n");
+Scanner input2=new Scanner(System.in);
+dvalue=input2.nextDouble();
+num5=(Math.floor((dvalue%10000)/1000)+3)*10;
+num6=(Math.floor((dvalue%1000)/100)+3);
+num7=(Math.floor((dvalue%100)/10)+3)*1000;
+num8=(Math.floor((dvalue%10))+3)*100;
+total1=num5+num6+num7+num8;
+System.out.println("Here is your decrypted number: "+String.format("%04.0f",total1));
+}
+}

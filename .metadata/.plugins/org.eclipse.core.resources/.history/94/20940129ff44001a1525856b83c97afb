@@ -1,0 +1,103 @@
+package mypackage;
+import java.util.Scanner;
+
+
+public class BMICalculator {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+System.out.println("Hello!\nWelcome to the NoodleTech BMI calculator!\nThis program can do a few things, they are listed below.");
+System.out.println("Select from the menu:\n1. Calculate BMI using Imperial Units(e.g, inches and pounds)\n2. Calculate BMI using Metric Units(e.g, meters and kilograms)\n3. Display the BMI categories and their values from the National Heart Lung and Blood Institute.");
+Scanner input=new Scanner(System.in);//User chooses from the menu
+int choice=input.nextInt();
+switch(choice) {
+case 1:
+	//BMI using Imperial Units
+	BMICalculator dataacquisition=new BMICalculator();
+	dataacquisition.calculateBmi();
+	
+	
+	break;
+case 2:
+	//BMI using Metric Units
+	break;
+case 3:
+	//BMI categories and whatnot
+	BMICalculator bmicats=new BMICalculator();
+	bmicats.bmiTable();
+	break;
+	default:
+		System.out.println("That is an invalid selection, please try again...");
+		break;
+}
+	
+	
+	}
+	private void readMetricData() {
+		
+	}
+	private void readImperialData() {
+		Scanner input=new Scanner(System.in);
+		System.out.println("Please enter your height in inches: ");
+		double heighti=input.nextDouble();
+		
+		
+		System.out.println("Please enter your weight in pounds: ");
+		double weighti=input.nextDouble();
+		
+		
+	}
+	public void calculateBmi() {
+		BMICalculator dataacquisition=new BMICalculator();
+		dataacquisition.readImperialData();
+		double numer,denom,bmi;//Stands for numerator and denominator of the BMI equation, I felt it easier to break it up this way
+		numer=703*weighti;
+		denom=heighti*heighti;
+		bmi=numer/denom;
+	}
+	private void calculateBmiCategory() {
+		
+	}
+	
+public void readUserData() {
+	
+}
+public void displayBmi() {
+	
+}
+public double getWeighti() {
+	//This is the method for retrieving user weight value. Also the i after the method name and variable name represent imperial.
+	Scanner input=new Scanner(System.in);
+	System.out.println("Please enter your weight in pounds: ");
+	double weighti=input.nextDouble();
+	return weighti;
+}
+private void setWeight() {
+	
+}
+public double getHeighti() {
+	//Method to take user height input
+	Scanner input=new Scanner(System.in);
+	System.out.println("Please enter your height in inches: ");
+	double heighti=input.nextDouble();
+	return heighti;
+}
+private void setHeight() {
+	
+}
+public void getBmi() {
+	
+}
+public void getBmiCategory() {
+	
+}
+public void bmiTable() {
+	System.out.println("Here is the list of BMI categories and what they mean:\nUnderweight=<18.5\nNormal Weight=18.5-24.9\nOverweight=25-29.9\nObesity>=30");
+}
+
+
+
+
+
+
+}

@@ -1,0 +1,13 @@
+package mypackage;
+import java.util.Scanner;
+
+public class Decrypter {
+	public void ogvalue() {
+		double dvalue;
+System.out.println("Please enter the four digit number you would like to decrypt.\n");
+Scanner input2=new Scanner(System.in);
+dvalue=input2.nextDouble();
+
+
+}
+}

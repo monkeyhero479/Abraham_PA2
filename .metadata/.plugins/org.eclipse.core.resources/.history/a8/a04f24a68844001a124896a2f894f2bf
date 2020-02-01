@@ -1,0 +1,15 @@
+package mypackage;
+import java.util.Scanner;
+
+public class Encrypter {
+
+	public static void main(String[] args) {
+	System.out.println("Hello!\nWelcome to the Noodletech Encryption Software.\nPlease enter your four digit number below.");
+	Scanner number = new Scanner(System.in);
+	number.nextDouble()
+	System.out.println(number);
+	double fnum,snum,tnum,bnum;
+	number.nextDouble();
+	}
+
+}

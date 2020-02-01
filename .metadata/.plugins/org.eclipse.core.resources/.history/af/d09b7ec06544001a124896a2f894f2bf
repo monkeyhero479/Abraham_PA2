@@ -1,0 +1,16 @@
+package mypackage;
+import java.util.Scanner;
+
+public class Abraham_PA2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner number =new Scanner(System.in);
+System.out.println("Hello,\n Thank you for choosing Noodletech encryption software.\n Please enter your four digit number:");
+
+int input[]=number.nextInt();
+System.out.println("User input is "+input);
+	}
+
+}
